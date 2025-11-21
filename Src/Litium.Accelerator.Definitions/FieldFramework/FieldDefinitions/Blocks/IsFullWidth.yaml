@@ -1,0 +1,15 @@
+blockFields:
+- id: IsFullWidth
+  type: Boolean
+  name:
+    en-US: Banner full width
+    sv-SE: Fullbreddsbanner
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

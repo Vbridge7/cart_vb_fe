@@ -1,0 +1,6 @@
+productRelationshipTypes:
+- id: GF
+  name:
+    en-US: girlf
+    sv-SE: girlf
+  bidirectional: false

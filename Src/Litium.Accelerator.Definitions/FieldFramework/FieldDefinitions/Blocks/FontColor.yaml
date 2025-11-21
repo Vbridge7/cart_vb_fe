@@ -1,0 +1,15 @@
+blockFields:
+- id: FontColor
+  type: Text
+  name:
+    en-US: Font color
+    sv-SE: Textfärg
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true

@@ -1,0 +1,15 @@
+blockFields:
+- id: NavigationLink
+  type: Link
+  name:
+    en-US: Navigation link
+    sv-SE: Navigationslänk
+  settings:
+    multiCulture: true
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true

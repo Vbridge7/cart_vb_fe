@@ -1,0 +1,21 @@
+productFields:
+- id: FrontMaterial
+  type: TextOption
+  name:
+    en-US: Front material
+    sv-SE: Material front
+  settings:
+    multiCulture: true
+    administration:
+      columns: true
+      filter: true
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false
+  option:
+    items:
+    - name:
+        en-US: Moist resistant MDF
+        sv-SE: Fukttrög MDF
+      value: MoistResistantMDF

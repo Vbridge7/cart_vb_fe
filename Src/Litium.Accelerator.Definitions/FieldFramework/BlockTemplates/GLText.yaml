@@ -1,0 +1,32 @@
+blockTemplates:
+- icon:
+    style: fas
+    id: fa-t
+  childBlocks:
+    combination: All
+  type: Block
+  fieldGroups:
+  - id: General
+    fields:
+    - id: BlockTitle
+    - id: MultiLangEditor
+    - id: NavigationLink
+    administration:
+      collapsed: false
+    storefront:
+      visible: true
+  - id: Styling
+    fields:
+    - id: IsFullWidth
+    - id: BackgroundColor
+    - id: TitleFontColor
+    - id: FontColor
+    administration:
+      collapsed: false
+    storefront:
+      visible: true
+  id: GLText
+  category: Pages
+  name:
+    en-US: Text Block (GL)
+    sv-SE: Text Block (GL)
