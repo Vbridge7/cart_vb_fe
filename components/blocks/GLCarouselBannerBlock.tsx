@@ -1,10 +1,13 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 
+import { WebsiteContext } from 'contexts/websiteContext';
 import { Block } from 'models/block';
-import { TextOption } from 'models/option';
 import { NavigationLink } from 'models/navigation';
+import { TextOption } from 'models/option';
+import Image from 'next/image';
+import { getAbsoluteImageUrl } from 'services/imageService';
 
 // NOTE: For Live Next.js Projects - Uncomment the line below for optimized image loading
 // import Image from 'next/image';
@@ -39,6 +42,7 @@ export interface GLCarouselBannerBlockProps extends Block {
 export const GLCarouselBannerBlock: React.FC<GLCarouselBannerBlockProps> = ({ fields }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const slides = fields.carouselSlides || [];
+  const {imageServerUrl} =useContext(WebsiteContext)
 
   // Auto-advance carousel every 5 seconds
   useEffect(() => {
@@ -111,16 +115,13 @@ export const GLCarouselBannerBlock: React.FC<GLCarouselBannerBlockProps> = ({ fi
               {/* Background Image */}
               {slide.slideImage?.item?.url && (
                 <div className="gfl-absolute gfl-inset-0 gfl-z-0">
-                  {/* NOTE: For Live Next.js Projects - Replace <img> with <Image> component below for better optimization */}
-                  {/* Uncomment this for Next.js projects:
                   <Image
-                    src={slide.slideImage.item.url}
+                    src={getAbsoluteImageUrl(slide.slideImage.item,imageServerUrl)}
                     alt={slide.slideImage.item.alt || slide.title || 'Carousel slide'}
                     fill
                     className="gfl-object-cover"
                     priority={index === 0}
                   />
-                  */} 
 
                   {/* Overlay for better text readability */}
                   <div className="gfl-absolute gfl-inset-0 gfl-bg-black gfl-opacity-40"></div>

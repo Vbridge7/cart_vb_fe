@@ -1,12 +1,14 @@
 'use client';
 
+import { WebsiteContext } from 'contexts/websiteContext';
 import DOMPurify from 'isomorphic-dompurify';
 import { Block } from 'models/block';
 import { NavigationLink } from 'models/navigation';
 import { TextOption } from 'models/option';
 import { PointerMediaImageItem } from 'models/pointers';
 import Image from 'next/image';
-import React, { useMemo } from 'react';
+import React, { useContext, useMemo } from 'react';
+import { getAbsoluteImageUrl } from 'services/imageService';
 
 
 export interface ColumnBlock {
@@ -39,6 +41,7 @@ export const GLColumnBannerBlock: React.FC<GLColumnBannerBlockProps> = ({ fields
     fontColor,
     columnBlocks = [],
   } = fields;
+
 
   const containerStyle: React.CSSProperties = {
     ...(backgroundColor?.value && { backgroundColor: backgroundColor.value }),
@@ -99,6 +102,7 @@ const ColumnItem: React.FC<ColumnItemProps> = ({
   columnStyle,
   backgroundColor,
 }) => {
+  const { imageServerUrl } = useContext(WebsiteContext);
   const sanitizedContent = useMemo(() => {
     if (!columnBlock.multiLangEditor) return '';
     return DOMPurify.sanitize(columnBlock.multiLangEditor, {
@@ -148,7 +152,7 @@ const ColumnItem: React.FC<ColumnItemProps> = ({
     >
       {hasImage && columnBlock.blockImagePointer?.item && (
         <Image
-          src={columnBlock.blockImagePointer.item.url}
+          src={getAbsoluteImageUrl(columnBlock.blockImagePointer.item, imageServerUrl)}
           alt={columnBlock.blockTitle || ''}
           fill
           className="rounded-lg object-cover object-center"
