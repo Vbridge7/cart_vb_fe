@@ -1,0 +1,30 @@
+blockTemplates:
+  - icon:
+      style: fas
+      id: fa-sliders
+    childBlocks:
+      combination: All
+    type: Block
+    fieldGroups:
+      - id: General
+        fields:
+          - id: _name
+          - id: CarouselSlides
+        administration:
+          collapsed: false
+        storefront:
+          visible: false
+      - id: Styling
+        fields:
+          - id: BackgroundColor
+          - id: FontColor
+          - id: IsFullWidth
+        administration:
+          collapsed: false
+        storefront:
+          visible: true
+    id: GLCarouselBanner
+    category: Pages
+    name:
+      en-US: Carousel Banner Block (GL)
+      sv-SE: Karusellbanner Block (GL)

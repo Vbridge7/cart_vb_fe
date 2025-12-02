@@ -1,0 +1,18 @@
+blockFields:
+  - id: IsButton
+    type: Boolean
+    name:
+      en-US: Is a Button?
+      sv-SE: Är en knapp?
+    description:
+      en-US: Select this to set the call to action link as a button. Else it will be shown as text
+      sv-SE: Välj för att sätta "call to action"-länken som en knapp. Annars visas den som en text
+    settings:
+      multiCulture: false
+      administration:
+        columns: false
+        filter: false
+        readonly: false
+      storefront:
+        visible: true
+        searchable: false

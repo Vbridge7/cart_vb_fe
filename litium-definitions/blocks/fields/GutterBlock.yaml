@@ -1,0 +1,15 @@
+blockFields:
+  - id: GutterBlock
+    name:
+      en-US: Gutter Block
+      sv-SE: Gutterblock
+    type: Int
+    settings:
+      multiCulture: false
+      administration:
+        columns: false
+        filter: false
+        readonly: false
+      storefront:
+        visible: true
+        searchable: false

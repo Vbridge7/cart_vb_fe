@@ -1,0 +1,32 @@
+blockTemplates:
+- category: Pages
+  icon:
+    style: fas
+    id: fa-list
+  childBlocks:
+    combination: IncludeSelected
+  type: Block
+  fieldGroups:
+  - id: General
+    name:
+      en-US: General
+      sv-SE: Allmänt
+    fields:
+    - id: _name
+    - id: CategoryList
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  - id: Styling
+    fields:
+    - id: BackgroundColor
+    - id: FullWidthBlock
+    administration:
+      collapsed: false
+    storefront:
+      visible: true
+  id: GLProductCategory
+  name:
+    en-US: Product Category Block (GL)
+    sv-SE: Product Category Block (GL)

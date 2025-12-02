@@ -1,0 +1,21 @@
+blockFields:
+  - id: NavigationList
+    type: MultiField
+    name:
+      en-US: Navigation List
+      sv-SE: Navigationslista
+    description:
+      en-US: Configure navigation links with images
+      sv-SE: Konfigurera navigationslänkar med bilder
+    settings:
+      administration:
+        readonly: false
+      storefront:
+        visible: true
+        searchable: true
+    option:
+      $type: Litium.FieldFramework.FieldTypes.MultiFieldOption, Litium.Abstractions
+      fields:
+        - BlockImagePointer
+        - NavigationLink
+      isArray: true

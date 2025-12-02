@@ -1,0 +1,49 @@
+blockTemplates:
+- icon:
+    style: fas
+    id: fa-building
+  childBlocks:
+    combination: All
+  type: Block
+  fieldGroups:
+  - id: General
+    fields:
+    - id: BlockTitle
+    - id: _name
+    - id: _description
+    - id: IsFullWidth
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  - id: LeftSection
+    fields:
+    - id: LeftSubheading
+    - id: LeftHeading
+    - id: LeftDescription
+    administration:
+      collapsed: false
+    storefront:
+      visible: true
+  - id: BrandSection
+    fields:
+    - id: BrandSectionTitle
+    - id: BrandLogos
+    - id: GridColumns
+    administration:
+      collapsed: false
+    storefront:
+      visible: true
+  - id: Styling
+    fields:
+    - id: BackgroundColor
+    - id: TitleFontColor
+    - id: FontColor
+    administration:
+      collapsed: false
+    storefront:
+      visible: true
+  id: GLBrandBanner
+  name:
+    en-US: Brand Banner Block (GL)
+    sv-SE: Varumärkesbanner Block (GL)

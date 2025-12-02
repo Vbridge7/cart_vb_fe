@@ -1,0 +1,43 @@
+blockFields:
+- id: FormFields
+  type: TextOption
+  name:
+    en-US: Form fields
+    sv-SE: Formulärfält
+  description:
+    en-US: Fields to be displayed in the form
+    sv-SE: Fält som ska visas upp i formuläret
+  settings:
+    administration:
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true
+  option:
+    $type: Litium.FieldFramework.FieldTypes.TextOption, Litium.Abstractions
+    items:
+    - name:
+        en-US: First name
+        sv-SE: Förnamn
+      value: firstName
+    - name:
+        en-US: Last name
+        sv-SE: Efternamn
+      value: lastName
+    - name:
+        en-US: Email
+        sv-SE: E-Post
+      value: email
+    - name:
+        en-US: Phone
+        sv-SE: Telefon
+      value: phone
+    - name:
+        en-US: Message
+        sv-SE: Meddelande
+      value: message
+    - name:
+        en-US: Organization
+        sv-SE: Organisation
+      value: organization
+    multiSelect: true

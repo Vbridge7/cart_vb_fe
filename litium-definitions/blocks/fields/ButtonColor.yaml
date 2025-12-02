@@ -1,0 +1,31 @@
+blockFields:
+  - id: ButtonColor
+    name:
+      en-US: Button Color
+      sv-SE: Knappfärg
+    type: TextOption
+    settings:
+      multiCulture: false
+      administration:
+        columns: false
+        filter: false
+        readonly: false
+      storefront:
+        visible: true
+        searchable: true
+    option:
+      items:
+        - value: primary
+          name:
+            en-US: Primary
+            sv-SE: Primär
+        - value: secondary
+          name:
+            en-US: Secondary
+            sv-SE: Sekundär
+        - value: accent
+          name:
+            en-US: Accent
+            sv-SE: Accent
+      multiSelect: false
+      manualSort: false

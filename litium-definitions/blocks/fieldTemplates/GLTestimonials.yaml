@@ -1,0 +1,54 @@
+blockTemplates:
+- category: Pages
+  icon:
+    style: far
+    id: fa-comments
+  childBlocks:
+    combination: IncludeSelected
+  type: Block
+  fieldGroups:
+  - id: General
+    name:
+      en-US: General
+      sv-SE: Allmänt
+    fields:
+    - id: _name
+    - id: BackgroundColor
+    - id: IsFullWidth
+    - id: ShowLeftSection
+    - id: ShowRightSection
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  - id: LeftSection
+    name:
+      en-US: Left Section
+      sv-SE: Vänster Sektion
+    fields:
+    - id: Title
+    - id: TitleFontColor
+    - id: _description
+    - id: DescriptionFontColor
+    - id: NavigationLink
+    - id: ButtonColor
+    - id: ButtonTextColor
+    administration:
+      collapsed: false
+    storefront:
+      visible: true
+  - id: TestimonialsSection
+    name:
+      en-US: Testimonials Section
+      sv-SE: Recensionssektion
+    fields:
+    - id: TestimonialBackgroundColor
+    - id: Testimonials
+    administration:
+      collapsed: false
+    storefront:
+      visible: true
+  id: GLTestimonials
+  name:
+    en-US: Testimonials Block (GL)
+    sv-SE: Recensionsblock (GL)

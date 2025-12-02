@@ -1,0 +1,54 @@
+blockTemplates:
+  - category: Pages
+    icon:
+      style: far
+      id: fa-object-group
+    childBlocks:
+      combination: IncludeSelected
+    type: Block
+    fieldGroups:
+      - id: General
+        name:
+          en-US: General
+          sv-SE: Allmänt
+        fields:
+          - id: _name
+          - id: BackgroundColor
+          - id: IsFullWidth
+          - id: ShowImageToRight
+        administration:
+          collapsed: false
+        storefront:
+          visible: false
+      - id: Banner
+        name:
+          en-US: Banner
+          sv-SE: Banner
+        fields:
+          - id: BlockImagePointer
+          - id: BackgroundOverlay
+          - id: Title
+          - id: FontColor
+          - id: _description
+          - id: NavigationLink
+          - id: IsButton
+        administration:
+          collapsed: false
+        storefront:
+          visible: true
+      - id: FeaturedProductListing
+        name:
+          en-US: Featured Product Listing
+          sv-SE: Featured Produktlista
+        fields:
+          - id: BlockTitle
+          - id: ProductsLinkList
+          - id: ShowVariants
+        administration:
+          collapsed: false
+        storefront:
+          visible: true
+    id: GLFeaturedProductsBanner
+    name:
+      en-US: Featured Products Banner (GL)
+      sv-SE: Featured Products Banner (GL)

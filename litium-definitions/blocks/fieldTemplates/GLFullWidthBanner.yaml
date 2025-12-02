@@ -1,0 +1,36 @@
+blockTemplates:
+- category: Pages
+  icon:
+    style: fas
+    id: fa-arrows-h
+  childBlocks:
+    combination: IncludeSelected
+  type: Block
+  fieldGroups:
+    - id: General
+      name:
+        en-US: General
+        sv-SE: Allmänt
+      fields:
+        - id: _name
+        - id: _description
+        - id: BlockTitle
+        - id: BlockImagePointer
+        - id: NavigationLink
+      administration:
+        collapsed: false
+      storefront:
+        visible: false
+    - id: Styling
+      fields:
+        - id: FontColor
+        - id: BackgroundColor
+        - id: IsFullWidth
+      administration:
+        collapsed: false
+      storefront:
+        visible: true
+  id: GLFullWidthBanner
+  name:
+    en-US: Full Width Banner Block (GL)
+    sv-SE: Full Width Banner Block (GL)

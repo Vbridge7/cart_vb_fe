@@ -1,0 +1,18 @@
+blockFields:
+- id: PrivacyPageUrl
+  type: Pointer
+  name:
+    en-US: Privacy page URL
+    sv-SE: Integritetspolicy sida URL
+  description:
+    en-US: Link to privacy policy page
+    sv-SE: Länk till integritetspolicysidan
+  settings:
+    administration:
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false
+  option:
+    entityType: WebsitesPage
+    multiSelect: false

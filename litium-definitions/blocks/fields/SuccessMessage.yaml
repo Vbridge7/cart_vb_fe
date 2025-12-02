@@ -1,0 +1,15 @@
+blockFields:
+- id: SuccessMessage
+  type: LimitedText
+  name:
+    en-US: Success message
+    sv-SE: Framgångsmeddelande
+  description:
+    en-US: Message to display after successful registration
+    sv-SE: Meddelande som visas efter lyckad registrering
+  settings:
+    administration:
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

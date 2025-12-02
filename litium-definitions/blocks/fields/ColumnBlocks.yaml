@@ -1,0 +1,22 @@
+blockFields:
+- id: ColumnBlocks
+  type: MultiField
+  name:
+    en-US: ColumnBlocks
+    sv-SE: ColumnBlocks
+  settings:
+    administration:
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true
+  option:
+    $type: Litium.FieldFramework.FieldTypes.MultiFieldOption, Litium.Abstractions
+    fields:
+    - BlockTitle
+    - MultiLangEditor
+    - BlockImagePointer
+    - NavigationLink
+    - isButton
+    - BackgroundOverlay
+    isArray: true

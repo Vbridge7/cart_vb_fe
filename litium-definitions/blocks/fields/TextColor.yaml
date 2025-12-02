@@ -1,0 +1,43 @@
+blockFields:
+  - id: TextColor
+    type: TextOption
+    name:
+      en-US: Text Color
+      sv-SE: Textfärg
+    settings:
+      multiCulture: false
+      administration:
+        columns: false
+        filter: false
+        readonly: false
+      storefront:
+        visible: true
+        searchable: true
+    option:
+      items:
+        - name:
+            en-US: Primary Color
+            sv-SE: Primary Color
+          value: text-brand-primary
+        - name:
+            en-US: Secondary Color
+            sv-SE: Secondary Color
+          value: text-brand-secondary
+        - name:
+            en-US: Tertiary color
+            sv-SE: Tertiary color
+          value: text-brand-tertiary
+        - name:
+            en-US: Background color
+            sv-SE: Background color
+          value: text-ui-background
+        - name:
+            en-US: Black
+            sv-SE: Black
+          value: text-black
+        - name:
+            en-US: White
+            sv-SE: White
+          value: text-white
+      multiSelect: false
+      manualSort: false

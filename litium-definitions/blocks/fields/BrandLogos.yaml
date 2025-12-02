@@ -1,0 +1,17 @@
+blockFields:
+- id: BrandLogos
+  type: MultiField
+  name:
+    en-US: Brand Logos
+    sv-SE: Varumärkeslogotyper
+  settings:
+    administration:
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false
+  option:
+    $type: Litium.FieldFramework.FieldTypes.MultiFieldOption, Litium.Abstractions
+    fields:
+    - BlockImagePointer
+    isArray: true

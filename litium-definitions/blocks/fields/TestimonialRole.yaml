@@ -1,0 +1,18 @@
+blockFields:
+- id: TestimonialRole
+  type: Text
+  name:
+    en-US: Role
+    sv-SE: Roll
+  description:
+    en-US: Testimonial author role/position
+    sv-SE: Författarens roll/position
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true

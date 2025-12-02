@@ -1,0 +1,18 @@
+blockFields:
+- id: TermsPageUrl
+  type: Pointer
+  name:
+    en-US: Terms page URL
+    sv-SE: Villkor sida URL
+  description:
+    en-US: Link to terms and conditions page
+    sv-SE: Länk till villkorssidan
+  settings:
+    administration:
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false
+  option:
+    entityType: WebsitesPage
+    multiSelect: false

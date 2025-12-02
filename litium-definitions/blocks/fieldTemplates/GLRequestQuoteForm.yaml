@@ -1,0 +1,34 @@
+blockTemplates:
+- category: Pages
+  icon:
+    style: fas
+    id: fa-bars
+  childBlocks:
+    combination: IncludeSelected
+  type: Block
+  fieldGroups:
+  - id: General
+    fields:
+    - id: _name
+    - id: BlockTitle
+    - id: MultiLangEditor
+    - id: FormFields
+    - id: FormReceiverEmail
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  - id: Styling
+    fields:
+    - id: TitleFontColor
+    - id: FontColor
+    - id: BackgroundColor
+    - id: IsFullWidth
+    administration:
+      collapsed: false
+    storefront:
+      visible: true
+  id: GLRequestQuoteForm
+  name:
+    en-US: Request Quote Block (GL)
+    sv-SE: Request Quote Block (GL)

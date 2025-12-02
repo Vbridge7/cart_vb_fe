@@ -1,0 +1,34 @@
+blockFields:
+  - id: ButtonTextColor
+    type: TextOption
+    name:
+      en-US: Button Text Color
+      sv-SE: Knapp Textfärg
+    description:
+      en-US: Text color for button
+      sv-SE: Textfärg för knapp
+    settings:
+      multiCulture: false
+      administration:
+        columns: false
+        filter: false
+        readonly: false
+      storefront:
+        visible: true
+        searchable: true
+    option:
+      items:
+        - name:
+            en-US: White
+            sv-SE: Vit
+          value: '#FFFFFF'
+        - name:
+            en-US: Black
+            sv-SE: Svart
+          value: '#000000'
+        - name:
+            en-US: Gray
+            sv-SE: Grå
+          value: '#6B7280'
+      multiSelect: false
+      manualSort: false

@@ -1,0 +1,21 @@
+blockFields:
+  - id: CategorySelector
+    type: MultiField
+    name:
+      en-US: Category Selector
+      sv-SE: Kategoriväljare
+    description:
+      en-US: Configure categories to display with optional child category inclusion
+      sv-SE: Konfigurera kategorier att visa med valfri inkludering av underkategorier
+    settings:
+      administration:
+        readonly: false
+      storefront:
+        visible: true
+        searchable: true
+    option:
+      $type: Litium.FieldFramework.FieldTypes.MultiFieldOption, Litium.Abstractions
+      fields:
+        - CategoryPointer
+        - ShowAllChildCategories
+      isArray: true

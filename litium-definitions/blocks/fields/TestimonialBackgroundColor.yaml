@@ -1,0 +1,42 @@
+blockFields:
+  - id: TestimonialBackgroundColor
+    type: TextOption
+    name:
+      en-US: Testimonial Background Color
+      sv-SE: Bakgrundsfärg för vittnesmål
+    description:
+      en-US: Background color for testimonials section
+      sv-SE: Bakgrundsfärg för recensionssektion
+    settings:
+      multiCulture: false
+      administration:
+        columns: false
+        filter: false
+        readonly: false
+      storefront:
+        visible: true
+        searchable: true
+    option:
+      items:
+        - name:
+            en-US: Light Beige
+            sv-SE: Ljus beige
+          value: '#F8F6F2'
+        - name:
+            en-US: Light Gray
+            sv-SE: Ljusgrå
+          value: '#F3F4F6'
+        - name:
+            en-US: Light Blue
+            sv-SE: Ljusblå
+          value: '#EFF6FF'
+        - name:
+            en-US: White
+            sv-SE: Vit
+          value: '#FFFFFF'
+        - name:
+            en-US: Black
+            sv-SE: Svart
+          value: '#000000'
+      multiSelect: false
+      manualSort: false

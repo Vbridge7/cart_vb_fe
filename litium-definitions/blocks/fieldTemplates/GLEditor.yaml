@@ -1,0 +1,52 @@
+blockTemplates:
+- icon:
+    style: fas
+    id: fa-list-alt
+  childBlocks:
+    combination: IncludeSelected
+  type: Block
+  fieldGroups:
+  - id: General
+    name:
+      en-US: General
+      sv-SE: Allmänt
+    fields:
+    - id: _name
+    - id: BlockTitle
+    - id: MultiLangEditor
+    - id: NavigationLink
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  - id: LinkStyling
+    name:
+      en-US: Link Styling
+      sv-SE: Länkstyling
+    fields:
+    - id: IsButton
+    - id: ButtonSize
+    - id: ButtonColor
+    - id: HollowButton
+    administration:
+      collapsed: false
+    storefront:
+      visible: true
+  - id: GeneralStyling
+    name:
+      en-US: General Styling
+      sv-SE: Allmän styling
+    fields:
+    - id: TitleFontColor
+    - id: BackgroundColor
+    - id: FontColor
+    - id: IsFullWidth
+    - id: ExtraMargin
+    administration:
+      collapsed: false
+    storefront:
+      visible: true
+  id: GLEditor
+  name:
+    en-US: Editor Block (GL)
+    sv-SE: Editor Block (GL)

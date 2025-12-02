@@ -1,0 +1,46 @@
+blockFields:
+- id: CustomerRegistrationFields
+  type: TextOption
+  name:
+    en-US: Customer registration form fields
+    sv-SE: Kundregistreringsformulärfält
+  description:
+    en-US: Fields to be displayed in the customer registration form
+    sv-SE: Fält som ska visas upp i kundregistreringsformuläret
+  settings:
+    administration:
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true
+  option:
+    items:
+    - name:
+        en-US: First name
+        sv-SE: Förnamn
+      value: firstName
+    - name:
+        en-US: Last name
+        sv-SE: Efternamn
+      value: lastName
+    - name:
+        en-US: Email
+        sv-SE: E-Post
+      value: email
+    - name:
+        en-US: Phone
+        sv-SE: Telefon
+      value: phone
+    - name:
+        en-US: Company name
+        sv-SE: Företagsnamn
+      value: companyName
+    - name:
+        en-US: Company registration number
+        sv-SE: Organisationsnummer
+      value: companyRegistrationNumber
+    - name:
+        en-US: Terms acceptance
+        sv-SE: Godkännande av villkor
+      value: terms
+    multiSelect: true

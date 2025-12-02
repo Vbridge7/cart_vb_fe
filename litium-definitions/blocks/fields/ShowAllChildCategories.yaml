@@ -1,0 +1,18 @@
+blockFields:
+  - id: ShowAllChildCategories
+    type: Boolean
+    name:
+      en-US: Show All Child Categories
+      sv-SE: Visa alla underkategorier
+    description:
+      en-US: Include all child/sub-categories of the selected category
+      sv-SE: Inkludera alla underordnade kategorier för den valda kategorin
+    settings:
+      multiCulture: false
+      administration:
+        columns: false
+        filter: false
+        readonly: false
+      storefront:
+        visible: true
+        searchable: false

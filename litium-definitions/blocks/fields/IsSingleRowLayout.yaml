@@ -1,0 +1,15 @@
+blockFields:
+  - id: IsSingleRowLayout
+    name:
+      en-US: Single Row Layout
+      sv-SE: Enkel radlayout
+    type: Boolean
+    settings:
+      multiCulture: false
+      administration:
+        columns: false
+        filter: false
+        readonly: false
+      storefront:
+        visible: true
+        searchable: false

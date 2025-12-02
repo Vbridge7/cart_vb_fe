@@ -1,0 +1,15 @@
+blockFields:
+  - id: CenterImage
+    name:
+      en-US: Center Image
+      sv-SE: Centrera bild
+    type: Boolean
+    settings:
+      multiCulture: false
+      administration:
+        columns: false
+        filter: false
+        readonly: false
+      storefront:
+        visible: true
+        searchable: false

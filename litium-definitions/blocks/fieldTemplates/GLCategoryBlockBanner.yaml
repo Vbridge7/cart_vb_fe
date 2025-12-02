@@ -1,0 +1,28 @@
+id: GLCategoryBanner
+name:
+  en-US: Category Block Banner (GL)
+  sv-SE: Category Block Banner (GL)
+icon:
+  style: fas
+  id: fa-image
+type: Block
+childBlocks:
+  combination: All
+fieldGroups:
+  - id: General
+    fields:
+      - id: Title
+      - id: _description
+    administration:
+      collapsed: false
+    storefront:
+      visible: true
+  - id: Styling
+    fields:
+      - id: BackgroundColor
+      - id: TextColor
+      - id: BackgroundImage
+    administration:
+      collapsed: false
+    storefront:
+      visible: true

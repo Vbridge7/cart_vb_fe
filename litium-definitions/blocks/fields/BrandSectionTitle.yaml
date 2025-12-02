@@ -1,0 +1,15 @@
+blockFields:
+- id: BrandSectionTitle
+  type: Text
+  name:
+    en-US: Brand Section Title
+    sv-SE: Varumärkessektion titel
+  settings:
+    multiCulture: true
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true

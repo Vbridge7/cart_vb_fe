@@ -1,0 +1,18 @@
+blockFields:
+- id: TestimonialReview
+  type: LimitedText
+  name:
+    en-US: Review
+    sv-SE: Recension
+  description:
+    en-US: Testimonial review text
+    sv-SE: Recensionstext
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true

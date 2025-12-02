@@ -1,0 +1,21 @@
+blockFields:
+  - id: CategoryPointer
+    type: Pointer
+    name:
+      en-US: Category
+      sv-SE: Kategori
+    description:
+      en-US: Select a category from the category tree
+      sv-SE: Välj en kategori från kategoriträdet
+    settings:
+      multiCulture: false
+      administration:
+        columns: false
+        filter: false
+        readonly: false
+      storefront:
+        visible: true
+        searchable: false
+    option:
+      entityType: ProductsCategory
+      multiSelect: false

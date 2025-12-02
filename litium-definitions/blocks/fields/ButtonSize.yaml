@@ -1,0 +1,31 @@
+blockFields:
+  - id: ButtonSize
+    name:
+      en-US: Button Size
+      sv-SE: Knappstorlek
+    type: TextOption
+    settings:
+      multiCulture: false
+      administration:
+        columns: false
+        filter: false
+        readonly: false
+      storefront:
+        visible: true
+        searchable: true
+    option:
+      items:
+        - value: small
+          name:
+            en-US: Small
+            sv-SE: Liten
+        - value: medium
+          name:
+            en-US: Medium
+            sv-SE: Medium
+        - value: large
+          name:
+            en-US: Large
+            sv-SE: Stor
+      multiSelect: false
+      manualSort: false

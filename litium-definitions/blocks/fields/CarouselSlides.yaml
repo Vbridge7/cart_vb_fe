@@ -1,0 +1,21 @@
+blockFields:
+  - id: CarouselSlides
+    type: MultiField
+    name:
+      en-US: Carousel Slides
+      sv-SE: Karusellbilder
+    settings:
+      administration:
+        readonly: false
+      storefront:
+        visible: true
+        searchable: true
+    option:
+      $type: Litium.FieldFramework.FieldTypes.MultiFieldOption, Litium.Abstractions
+      fields:
+        - Title
+        - SlideDescription
+        - ButtonLabel
+        - NavigationLink
+        - SlideImage
+      isArray: true

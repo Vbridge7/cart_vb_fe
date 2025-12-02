@@ -1,0 +1,29 @@
+blockFields:
+- id: GridColumns
+  type: TextOption
+  name:
+    en-US: Grid Columns
+    sv-SE: Rutnätskolumner
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false
+  option:
+    items:
+    - name:
+        en-US: 3 Columns
+        sv-SE: 3 Kolumner
+      value: '3'
+    - name:
+        en-US: 4 Columns
+        sv-SE: 4 Kolumner
+      value: '4'
+    - name:
+        en-US: 5 Columns
+        sv-SE: 5 Kolumner
+      value: '5'

@@ -1,0 +1,19 @@
+blockFields:
+- id: BrandList
+  type: MultiField
+  name:
+    en-US: List of brands
+    sv-SE: Varumärkeslista
+  settings:
+    administration:
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true
+  option:
+    $type: Litium.FieldFramework.FieldTypes.MultiFieldOption, Litium.Abstractions
+    fields:
+    - BlockImagePointer
+    - Title
+    - NavigationLink
+    isArray: true

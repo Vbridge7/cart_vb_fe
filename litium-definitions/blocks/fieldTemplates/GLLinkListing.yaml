@@ -1,0 +1,33 @@
+blockTemplates:
+- category: Pages
+  icon:
+    style: fas
+    id: fa-link
+  childBlocks:
+    combination: IncludeSelected
+  type: Block
+  fieldGroups:
+  - id: General
+    name:
+      en-US: General
+      sv-SE: Allmänt
+    fields:
+    - id: _name
+    - id: Title
+    - id: NavigationList
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  - id: Styling
+    fields:
+    - id: BackgroundColor
+    - id: FullWidthBlock
+    administration:
+      collapsed: false
+    storefront:
+      visible: true
+  id: GLLinkListing
+  name:
+    en-US: Link Listing Block (GL)
+    sv-SE: Link Listing Block (GL)

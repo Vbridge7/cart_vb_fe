@@ -1,0 +1,15 @@
+blockFields:
+  - id: ButtonLabel
+    type: Text
+    name:
+      en-US: Button Label
+      sv-SE: Knappetikett
+    settings:
+      multiCulture: true
+      administration:
+        columns: false
+        filter: false
+        readonly: false
+      storefront:
+        visible: true
+        searchable: true

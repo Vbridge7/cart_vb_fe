@@ -1,0 +1,32 @@
+blockTemplates:
+- icon:
+    style: fas
+    id: fa-image
+  childBlocks:
+    combination: All
+  type: Block
+  fieldGroups:
+  - id: General
+    fields:
+    - id: _name
+    - id: ColumnBlocks
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  - id: Styling
+    fields:
+    - id: IsSingleRowLayout
+    - id: GutterBlock
+    - id: FontColor
+    - id: BackgroundColor
+    - id: IsFullWidth
+    administration:
+      collapsed: false
+    storefront:
+      visible: true
+  id: GLColumnBanner
+  category: Pages
+  name:
+    en-US: Column Banner Block (GL)
+    sv-SE: Column Banner Block (GL)

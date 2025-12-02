@@ -1,0 +1,33 @@
+blockTemplates:
+- category: Pages
+  icon:
+    style: fas
+    id: fa-th-large
+  childBlocks:
+    combination: IncludeSelected
+  type: Block
+  fieldGroups:
+  - id: General
+    name:
+      en-US: General
+      sv-SE: Allmänt
+    fields:
+    - id: Title
+    - id: GridBanner
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  - id: Styling
+    fields:
+    - id: TitleFontColor
+    - id: BackgroundColor
+    - id: FullWidthBlock
+    administration:
+      collapsed: false
+    storefront:
+      visible: true
+  id: GLGridBanner
+  name:
+    en-US: Grid Banner Block (GL)
+    sv-SE: Grid Banner Block (GL)

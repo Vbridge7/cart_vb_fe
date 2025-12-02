@@ -1,0 +1,24 @@
+blockFields:
+- id: Testimonials
+  type: MultiField
+  name:
+    en-US: Testimonials
+    sv-SE: Vittnesmål
+  description:
+    en-US: List of customer testimonials
+    sv-SE: Lista över kundrecensioner
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true
+  option:
+    fields:
+    - TestimonialReview
+    - TestimonialName
+    - TestimonialRole
+    isArray: true

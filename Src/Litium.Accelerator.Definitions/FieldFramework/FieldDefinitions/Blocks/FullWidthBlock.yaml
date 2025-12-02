@@ -1,0 +1,15 @@
+blockFields:
+- id: FullWidthBlock
+  type: Boolean
+  name:
+    en-US: Full Width Block
+    sv-SE: Full Width Block
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: false

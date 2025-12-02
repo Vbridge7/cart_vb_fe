@@ -1,0 +1,37 @@
+blockTemplates:
+- category: Pages
+  icon:
+    style: fas
+    id: fa-user-plus
+  childBlocks:
+    combination: IncludeSelected
+  type: Block
+  fieldGroups:
+  - id: General
+    fields:
+    - id: _name
+    - id: BlockTitle
+    - id: MultiLangEditor
+    - id: CustomerRegistrationFields
+    - id: FormReceiverEmail
+    - id: TermsPageUrl
+    - id: PrivacyPageUrl
+    - id: SuccessMessage
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  - id: Styling
+    fields:
+    - id: TitleFontColor
+    - id: FontColor
+    - id: BackgroundColor
+    - id: IsFullWidth
+    administration:
+      collapsed: false
+    storefront:
+      visible: true
+  id: GLCustomerRegistration
+  name:
+    en-US: Customer Registration Block (GL)
+    sv-SE: Kundregistreringsblock (GL)

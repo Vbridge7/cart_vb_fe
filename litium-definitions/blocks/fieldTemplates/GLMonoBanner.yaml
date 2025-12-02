@@ -1,0 +1,50 @@
+blockTemplates:
+- icon:
+    style: fas
+    id: fa-box
+  childBlocks:
+    combination: IncludeSelected
+    selections:
+    - id: GLEditor
+  type: Block
+  fieldGroups:
+  - id: General
+    fields:
+    - id: BlockImagePointer
+    - id: Title
+    - id: _description
+    - id: NavigationLink
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  - id: LinkStyling
+    name:
+      en-US: Link Styling
+      sv-SE: Link Styling
+    fields:
+    - id: IsButton
+    - id: ButtonSize
+    - id: ButtonColor
+    - id: HollowButton
+    administration:
+      collapsed: false
+    storefront:
+      visible: true
+  - id: Styling
+    fields:
+    - id: CenterImage
+    - id: BackgroundColor
+    - id: IsFullWidth
+    - id: FontColor
+    - id: IsBannerImage
+    - id: BackgroundOverlay
+    administration:
+      collapsed: false
+    storefront:
+      visible: true
+  id: GLMonoBanner
+  category: Pages
+  name:
+    en-US: Mono Banner Block (GL)
+    sv-SE: Mono Banner Block (GL)

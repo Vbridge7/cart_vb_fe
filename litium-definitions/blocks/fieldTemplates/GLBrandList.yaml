@@ -1,0 +1,30 @@
+blockTemplates:
+- icon:
+    style: fas
+    id: fa-industry
+  childBlocks:
+    combination: IncludeSelected
+  type: Block
+  fieldGroups:
+  - id: General
+    fields:
+    - id: _name
+    - id: Title
+    - id: BrandList
+    administration:
+      collapsed: false
+    storefront:
+      visible: true
+  - id: Styling
+    fields:
+    - id: FontColor
+    - id: BackgroundColor
+    - id: IsFullWidth
+    administration:
+      collapsed: false
+    storefront:
+      visible: true
+  id: GLBrandList
+  name:
+    en-US: Brand List Block (GL)
+    sv-SE: Varumärkeslistblock (GL)

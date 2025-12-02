@@ -1,0 +1,36 @@
+blockFields:
+- id: DescriptionFontColor
+  type: TextOption
+  name:
+    en-US: Description Font Color
+    sv-SE: Beskrivning Fontfärg
+  description:
+    en-US: Font color for description text
+    sv-SE: Fontfärg för beskrivningstext
+  settings:
+    multiCulture: false
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true
+  option:
+    items:
+    - name:
+        en-US: Black
+        sv-SE: Svart
+      value: '#000000'
+    - name:
+        en-US: White
+        sv-SE: Vit
+      value: '#FFFFFF'
+    - name:
+        en-US: Gray
+        sv-SE: Grå
+      value: '#6B7280'
+    - name:
+        en-US: Dark Gray
+        sv-SE: Mörkgrå
+      value: '#374151'

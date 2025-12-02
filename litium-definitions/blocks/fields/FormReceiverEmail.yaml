@@ -1,0 +1,30 @@
+blockFields:
+- id: FormReceiverEmail
+  type: TextOption
+  name:
+    en-US: Form Receiver Email
+    sv-SE: Mottagare e-postadress
+  settings:
+    multiCulture: true
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true
+  option:
+    items:
+    - name:
+        en-US: Sales Team
+        sv-SE: Säljteam
+      value: sales@example.com
+    - name:
+        en-US: Support Team
+        sv-SE: Supportteam
+      value: support@example.com
+    - name:
+        en-US: Quotes Department
+        sv-SE: Offertavdelning
+      value: quotes@example.com
+    multiSelect: false

@@ -1,0 +1,18 @@
+blockFields:
+  - id: ShowVariants
+    type: Boolean
+    name:
+      en-US: Show variants
+      sv-SE: Visa varianter
+    description:
+      en-US: Show variants in the product list, otherwise base products will be shown
+      sv-SE: Visa varianter i produktlistan, annars visas basprodukter
+    settings:
+      multiCulture: false
+      administration:
+        columns: false
+        filter: false
+        readonly: false
+      storefront:
+        visible: true
+        searchable: false

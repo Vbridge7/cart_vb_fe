@@ -1,0 +1,15 @@
+blockFields:
+  - id: IsBannerImage
+    name:
+      en-US: Is Banner Image
+      sv-SE: Är bannerbild
+    type: Boolean
+    settings:
+      multiCulture: false
+      administration:
+        columns: false
+        filter: false
+        readonly: false
+      storefront:
+        visible: true
+        searchable: false

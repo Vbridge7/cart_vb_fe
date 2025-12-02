@@ -1,0 +1,33 @@
+blockTemplates:
+- icon:
+    style: fas
+    id: fa-bars
+  childBlocks:
+    combination: IncludeSelected
+  type: Block
+  fieldGroups:
+  - id: General
+    fields:
+    - id: _name
+    - id: Title
+    - id: MultiLangEditor
+    - id: FormFields
+    - id: FormReceiverEmail
+    administration:
+      collapsed: false
+    storefront:
+      visible: false
+  - id: Styling
+    fields:
+    - id: TitleFontColor
+    - id: FontColor
+    - id: BackgroundColor
+    - id: IsFullWidth
+    administration:
+      collapsed: false
+    storefront:
+      visible: true
+  id: GLContactForm
+  name:
+    en-US: Contact Us Form Block (C)
+    sv-SE: Contact Us Form Block (C)

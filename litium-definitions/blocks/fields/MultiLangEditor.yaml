@@ -1,0 +1,15 @@
+blockFields:
+- id: MultiLangEditor
+  type: Editor
+  name:
+    en-US: Multilingual Text Editor
+    sv-SE: Multilingual Text Editor
+  settings:
+    multiCulture: true
+    administration:
+      columns: false
+      filter: false
+      readonly: false
+    storefront:
+      visible: true
+      searchable: true

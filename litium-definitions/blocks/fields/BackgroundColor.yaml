@@ -1,0 +1,44 @@
+blockFields:
+  - id: BackgroundColor
+    type: TextOption
+    name:
+      en-US: Background Color
+      sv-SE: Background Color
+    settings:
+      multiCulture: false
+      administration:
+        columns: false
+        filter: false
+        readonly: false
+      storefront:
+        visible: true
+        searchable: true
+    option:
+      items:
+        - name:
+            en-US: Primary Color
+            sv-SE: Primary Color
+          value: bg-brand-primary
+        - name:
+            en-US: Secondary Color
+            sv-SE: Secondary Color
+          value: bg-brand-secondary
+        - name:
+            en-US: Tertiary color
+            sv-SE: Tertiary color
+          value: bg-brand-tertiary
+        - name:
+            en-US: Background color
+            sv-SE: Background color
+          value: bg-ui-background
+        - name:
+            en-US: Black
+            sv-SE: Black
+          value: bg-black
+        - name:
+            en-US: White
+            sv-SE: White
+          value: bg-white
+
+      multiSelect: false
+      manualSort: false

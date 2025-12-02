@@ -1,0 +1,31 @@
+blockFields:
+  - id: EmptyBlockSize
+    type: TextOption
+    name:
+      en-US: Size
+      sv-SE: Storlek
+    settings:
+      multiCulture: false
+      administration:
+        columns: false
+        filter: false
+        readonly: false
+      storefront:
+        visible: true
+        searchable: true
+    option:
+      items:
+        - name:
+            en-US: Small
+            sv-SE: Liten
+          value: small
+        - name:
+            en-US: Medium
+            sv-SE: Medium
+          value: medium
+        - name:
+            en-US: Large
+            sv-SE: Stor
+          value: large
+      multiSelect: false
+      manualSort: false
