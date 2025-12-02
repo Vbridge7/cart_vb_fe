@@ -50,7 +50,7 @@ export const GLCarouselBannerBlock: React.FC<GLCarouselBannerBlockProps> = ({ fi
 
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 5000);
+    }, 2000);
 
     return () => clearInterval(timer);
   }, [slides.length]);
@@ -84,64 +84,64 @@ export const GLCarouselBannerBlock: React.FC<GLCarouselBannerBlockProps> = ({ fi
 
   // Build container classes
   const containerClasses = fields.isFullWidth ?? false
-    ? 'gfl-w-full'
-    : 'gfl-w-full gfl-max-w-7xl gfl-mx-auto';
+    ? 'w-full'
+    : 'w-full max-w-7xl mx-auto';
 
   if (slides.length === 0) {
     return (
-      <div className={`gfl-carousel-banner gfl-p-8 gfl-text-center ${containerClasses}`} style={containerStyle}>
-        <p className="gfl-text-gray-500" style={textStyle}>No carousel slides available</p>
+      <div className={`carousel-banner p-8 text-center ${containerClasses}`} style={containerStyle}>
+        <p className="text-gray-500" style={textStyle}>No carousel slides available</p>
       </div>
     );
   }
 
   return (
-    <div className={`gfl-carousel-banner gfl-relative ${containerClasses}`} style={containerStyle}>
+    <div className={`carousel-banner relative ${containerClasses}`} style={containerStyle}>
       {/* Carousel Container */}
-      <div className="gfl-relative gfl-overflow-hidden" style={{ height: '538px' }}>
+      <div className="relative overflow-hidden h-96" >
         {/* Slides */}
         <div
-          className="gfl-flex gfl-transition-transform gfl-duration-500 gfl-ease-in-out gfl-h-full"
+          className="flex transition-transform duration-500 ease-in-out h-full"
           style={{ transform: `translateX(-${currentSlide * 100}%)` }}
         >
           {slides.map((slide, index) => (
             <div
               key={index}
-              className="gfl-flex-shrink-0 gfl-w-full gfl-h-full gfl-relative gfl-px-12 gfl-py-5"
+              className="flex-shrink-0 w-full h-full relative px-12 py-5"
               style={{
                 background: 'linear-gradient(360deg, rgba(255, 255, 255, 0) 12%, rgba(251.13, 255, 212.09, 0.12) 50%, rgba(255, 255, 255, 0) 87%), var(--primary, #1A2332)',
               }}
             >
               {/* Background Image */}
               {slide.slideImage?.item?.url && (
-                <div className="gfl-absolute gfl-inset-0 gfl-z-0">
+                <div className="absolute inset-0 z-0">
                   <Image
                     src={getAbsoluteImageUrl(slide.slideImage.item,imageServerUrl)}
                     alt={slide.slideImage.item.alt || slide.title || 'Carousel slide'}
                     fill
-                    className="gfl-object-cover"
+                    className="object-cover"
                     priority={index === 0}
                   />
 
                   {/* Overlay for better text readability */}
-                  <div className="gfl-absolute gfl-inset-0 gfl-bg-black gfl-opacity-40"></div>
+                  <div className="absolute inset-0 bg-black opacity-40"></div>
                 </div>
               )}
 
-              {/* Decorative Elements - inspired by the HTML structure */}
-              <div className="gfl-absolute gfl-w-20 gfl-h-20 gfl-right-24 gfl-bottom-24 gfl-z-10" style={{ backgroundColor: '#E8FF00' }}></div>
-              <div className="gfl-absolute gfl-w-60 gfl-h-60 gfl--left-20 gfl--top-20 gfl-border gfl-border-yellow-300 gfl-z-10"></div>
-              <div className="gfl-absolute gfl-w-9 gfl-h-9 gfl-right-16 gfl-top-24 gfl-z-10" style={{ backgroundColor: '#E8FF00' }}></div>
-              <div className="gfl-absolute gfl-w-3.5 gfl-h-3.5 gfl-right-12 gfl-bottom-16 gfl-z-10" style={{ backgroundColor: '#E8FF00' }}></div>
-              <div className="gfl-absolute gfl-w-3 gfl-h-3 gfl-right-28 gfl-bottom-8 gfl-z-10" style={{ backgroundColor: '#E8FF00' }}></div>
-              <div className="gfl-absolute gfl-w-2 gfl-h-2 gfl-right-20 gfl-bottom-24 gfl-z-10" style={{ backgroundColor: '#E8FF00' }}></div>
-              <div className="gfl-absolute gfl-w-14 gfl-h-14 gfl-right-16 gfl-bottom-12 gfl-z-10" style={{ backgroundColor: '#E8FF00' }}></div>
+              {/* Decorative Elements - inspired by the HTML structure
+              <div className="absolute w-20 h-20 right-24 bottom-24 z-10" style={{ backgroundColor: '#E8FF00' }}></div>
+              <div className="absolute w-60 h-60 -left-20 -top-20 border border-yellow-300 z-10"></div>
+              <div className="absolute w-9 h-9 right-16 top-24 z-10" style={{ backgroundColor: '#E8FF00' }}></div>
+              <div className="absolute w-3.5 h-3.5 right-12 bottom-16 z-10" style={{ backgroundColor: '#E8FF00' }}></div>
+              <div className="absolute w-3 h-3 right-28 bottom-8 z-10" style={{ backgroundColor: '#E8FF00' }}></div>
+              <div className="absolute w-2 h-2 right-20 bottom-24 z-10" style={{ backgroundColor: '#E8FF00' }}></div>
+              <div className="absolute w-14 h-14 right-16 bottom-12 z-10" style={{ backgroundColor: '#E8FF00' }}></div> */}
 
               {/* Slide Content */}
-              <div className="gfl-relative gfl-z-20 gfl-flex gfl-flex-col gfl-justify-center gfl-h-full gfl-max-w-2xl">
+              <div className="relative z-20 flex flex-col justify-center h-full max-w-2xl">
                 {slide.title && (
                   <h2
-                    className="gfl-text-5xl gfl-font-bold gfl-mb-4 gfl-leading-tight"
+                    className="text-5xl font-bold mb-4 leading-tight"
                     style={{ color: 'white', ...textStyle }}
                   >
                     {slide.title}
@@ -150,7 +150,7 @@ export const GLCarouselBannerBlock: React.FC<GLCarouselBannerBlockProps> = ({ fi
 
                 {slide.slideDescription && (
                   <p
-                    className="gfl-text-lg gfl-mb-6 gfl-leading-relaxed"
+                    className="text-lg mb-6 leading-relaxed"
                     style={{ color: 'white', ...textStyle }}
                   >
                     {slide.slideDescription}
@@ -163,7 +163,7 @@ export const GLCarouselBannerBlock: React.FC<GLCarouselBannerBlockProps> = ({ fi
                       href={slide.navigationLink.url}
                       target={isExternalLink(slide.navigationLink.url) ? '_blank' : '_self'}
                       rel={isExternalLink(slide.navigationLink.url) ? 'noopener noreferrer' : undefined}
-                      className="gfl-inline-flex gfl-items-center gfl-px-6 gfl-py-3 gfl-font-medium gfl-transition-colors gfl-duration-200"
+                      className="inline-flex items-center px-6 py-3 font-medium transition-colors duration-200"
                       style={{
                         backgroundColor: '#E8FF00',
                         color: '#1A2332',
@@ -183,19 +183,19 @@ export const GLCarouselBannerBlock: React.FC<GLCarouselBannerBlockProps> = ({ fi
           <>
             <button
               onClick={goToPrevious}
-              className="gfl-absolute gfl-left-4 gfl-top-1/2 gfl--translate-y-1/2 gfl-bg-white gfl-bg-opacity-80 hover:gfl-bg-opacity-100 gfl-text-gray-800 gfl-rounded-full gfl-p-3 gfl-transition-all gfl-duration-200 gfl-z-20"
+              className="absolute left-4 top-1/2 -translate-y-1/2 bg-white bg-opacity-80 hover:bg-opacity-100 text-gray-800 rounded-full p-3 transition-all duration-200 z-20"
               aria-label="Previous slide"
             >
-              <svg className="gfl-w-6 gfl-h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
               </svg>
             </button>
             <button
               onClick={goToNext}
-              className="gfl-absolute gfl-right-4 gfl-top-1/2 gfl--translate-y-1/2 gfl-bg-white gfl-bg-opacity-80 hover:gfl-bg-opacity-100 gfl-text-gray-800 gfl-rounded-full gfl-p-3 gfl-transition-all gfl-duration-200 gfl-z-20"
+              className="absolute right-4 top-1/2 -translate-y-1/2 bg-white bg-opacity-80 hover:bg-opacity-100 text-gray-800 rounded-full p-3 transition-all duration-200 z-20"
               aria-label="Next slide"
             >
-              <svg className="gfl-w-6 gfl-h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
             </button>
@@ -204,15 +204,15 @@ export const GLCarouselBannerBlock: React.FC<GLCarouselBannerBlockProps> = ({ fi
 
         {/* Dots Indicator */}
         {slides.length > 1 && (
-          <div className="gfl-absolute gfl-bottom-8 gfl-left-1/2 gfl--translate-x-1/2 gfl-flex gfl-gap-2 gfl-z-20">
+          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-2 z-20">
             {slides.map((_, index) => (
               <button
                 key={index}
                 onClick={() => goToSlide(index)}
-                className={`gfl-w-3 gfl-h-3 gfl-rounded-full gfl-transition-all gfl-duration-200 ${
+                className={`w-3 h-3 rounded-full transition-all duration-200 ${
                   index === currentSlide
-                    ? 'gfl-bg-white gfl-w-8'
-                    : 'gfl-bg-white gfl-bg-opacity-50 hover:gfl-bg-opacity-75'
+                    ? 'bg-white w-8'
+                    : 'bg-white bg-opacity-50 hover:bg-opacity-75'
                 }`}
                 aria-label={`Go to slide ${index + 1}`}
               />
